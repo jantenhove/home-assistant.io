@@ -16,9 +16,9 @@ redirect_from:
  - /components/camera.dispatcher/
 ---
 
-<p class='note'>
+<div class='note'>
 This platform is meant for developers only.
-</p>
+</div>
 
 The `dispatcher` camera platform allows developers to create virtual camera's.
 

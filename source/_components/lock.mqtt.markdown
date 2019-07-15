@@ -133,9 +133,11 @@ device:
       type: string
 {% endconfiguration %}
 
-<p class='note warning'>
+<div class='note warning'>
+
 Make sure that your topics match exactly. `some-topic/` and `some-topic` are different topics.
-</p>
+
+</div>
 
 ## Examples
 

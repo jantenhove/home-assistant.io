@@ -66,7 +66,7 @@ days_offset:
   type: integer
   default: 0
 add_holidays:
-  description: "Add custom holidays (such as company, personal holidays or vacations). Needs to formatted as `YYYY-MM-DD`." 
+  description: "Add custom holidays (such as company, personal holidays or vacations). Needs to formatted as `YYYY-MM-DD`."
   required: false
   type: list
 {% endconfiguration %}
@@ -74,12 +74,14 @@ add_holidays:
 Days are specified as follows: `mon`, `tue`, `wed`, `thu`, `fri`, `sat`, `sun`.
 The keyword `holiday` is used for public holidays identified by the holidays module.
 
-<p class='note warning'>
+<div class='note warning'>
+
 If you use the sensor for Norway (`NO`) you need to wrap `NO` in quotes or write the name in full.
 Otherwise the value is evaluated as `false`.
 If you use the sensor for Canada (`CA`) with Ontario (`ON`) as `province:` then you need to wrap `ON` in quotes.
 Otherwise the value is evaluated as `true` (check the YAML documentation for further details) and the sensor will not work.
-</p>
+
+</div>
 
 ## Full example
 
@@ -116,6 +118,8 @@ automation:
     entity_id: switch.heater
 ```
 
-<p class='note'>
+<div class='note'>
+
 Please remember that [as explained here](/docs/configuration/devices/) you can only have a single `automation:` entry. Add the automation to your existing automations.
-</p>
+
+</div>

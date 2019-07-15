@@ -10,7 +10,9 @@ footer: true
 redirect_from: /topics/platform_options/
 ---
 
-<p class='note info'>These options are being phased out and are only available for single platform integrations.</p>
+<div class='note info'>
+These options are being phased out and are only available for single platform integrations.
+</div>
 
 Some integrations or platforms (those that are based on the [entity](https://github.com/home-assistant/home-assistant/blob/dev/homeassistant/helpers/entity.py) class) allows various extra options to be set.
 

@@ -40,11 +40,13 @@ There is currently support for the following device types within Home Assistant:
 - [Sensor](#sensor)
 - [Switch](#switch)
 
-<p class='note'>
+<div class='note'>
+
   Please note: Besides the implemented platforms the `lcn` integration offers a variety of [service calls](#services).
   These service calls cover functionalities of the LCN system which cannot be represented by the platform implementations.
   They are ideal to be used in automation scripts or for the `template` platforms.
-</p>
+
+</div>
 
 ## Configuration
 
@@ -425,9 +427,11 @@ This platform depends on the correct configuration of the module's regulators wh
 You need to specify at least the variable for the current temperature and a setpoint variable for the target temperature. 
 If the control is set lockable, the regulator can be turned on/off. 
 
-<p class='note'>
+<div class='note'>
+
 If you intend to leave the regulation to home assistant, you should consider using the [Generic Thermostat](climate.generic_thermostat) in conjuction with [LCN Sensor](#sensor) and [LCN Switch](#switch).
-</p>
+
+</div>
 
 ### Cover
 
@@ -457,10 +461,10 @@ The `lcn` sensor platform allows the monitoring of the following [LCN](http://ww
 
 The sensor can be used in automation scripts or in conjunction with `template` platforms.
 
-<p class='note'>
+<div class='note'>
   Ensure that the LCN module is configured properly to provide the requested value.
   Otherwise the module might show unexpected behavior or return error messages.
-</p>
+</div>
 
 ### Switch
 
@@ -601,10 +605,10 @@ data:
   unit_of_measurement: %
 ```
 
-<p class='note'>
+<div class='note'>
   Ensure that the LCN module is configured properly to provide acces to the defined variable.
   Otherwise the module might show unexpected behaviors or return error messages.
-</p>
+</div>
 
 ### Service `var_rel`
 
@@ -630,10 +634,10 @@ data:
   unit_of_measurement: %
 ```
 
-<p class='note'>
-  Ensure that the LCN module is configured properly to provide acces to the defined variable.
+<div class='note'>
+  Ensure that the LCN module is configured properly to provide access to the defined variable.
   Otherwise the module might show unexpected behavior or return error messages.
-</p>
+</div>
 
 ### Service `var_reset`
 
@@ -653,10 +657,10 @@ data:
   variable: var1
 ```
 
-<p class='note'>
-  Ensure that the LCN module is configured properly to provide acces to the defined variable.
+<div class='note'>
+  Ensure that the LCN module is configured properly to provide access to the defined variable.
   Otherwise the module might show unexpected behavior or return error messages.
-</p>
+</div>
 
 ### Service `lock_regulator`
 
